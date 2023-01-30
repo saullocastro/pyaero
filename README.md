@@ -1,7 +1,14 @@
+Github Actions status:
+[![Test and coverage](https://github.com/saullocastro/pyaero/actions/workflows/pytest_and_coverage.yml/badge.svg)](https://github.com/saullocastro/pyaero/actions/workflows/pytest_and_coverage.yml)
+
+Coverage status:
+[![codecov](https://codecov.io/gh/saullocastro/pyaero/branch/main/graph/badge.svg?token=N2DtpxoOrf)](https://codecov.io/gh/saullocastro/pyaero)
+
+
 Doublet lattice method
 =======================
 
-
+TODO
 
 
 Citing this repository
@@ -14,6 +21,7 @@ Documentation
 -------------
 
 TODO
+
 
 History
 -------
