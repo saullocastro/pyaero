@@ -79,7 +79,7 @@ License :: OSI Approved :: BSD License
 """
 
 is_released = True
-version = '0.1.1'
+version = '0.1.2'
 
 fullversion = write_version_py(version, is_released)
 
@@ -89,7 +89,7 @@ package_data = {
         }
 
 s = setup(
-    name = "pyaero",
+    name = "pyaero-dlm",
     version = fullversion,
     author = "Higor Luis Silva",
     author_email = "higor@ufu.br",
