@@ -5,6 +5,7 @@ from setuptools import setup, find_packages
 
 import numpy as np
 
+
 def git_version():
     def _minimal_ext_cmd(cmd):
         # construct minimal environment
@@ -77,7 +78,7 @@ License :: OSI Approved :: BSD License
 
 """
 
-is_released = False
+is_released = True
 version = '0.1.0'
 
 fullversion = write_version_py(version, is_released)
@@ -86,21 +87,6 @@ package_data = {
         'pyaero': ['README.md', 'LICENSE', 'version.py', '*.pxd'],
         '': ['tests/*.*'],
         }
-
-if os.name == 'nt': # Windows
-    compile_args = ['/openmp', '/O2']
-    link_args = []
-elif os.name == 'posix': # MAC-OS
-    compile_args = []
-    link_args = []
-else: # Linux
-    compile_args = ['-fopenmp', '-static', '-static-libgcc', '-static-libstdc++']
-    link_args = ['-fopenmp', '-static-libgcc', '-static-libstdc++']
-include_dirs = [
-            np.get_include(),
-            ]
-
-macros = [('NPY_NO_DEPRECATED_API', 'NPY_1_7_API_VERSION')]
 
 s = setup(
     name = "pyaero",
